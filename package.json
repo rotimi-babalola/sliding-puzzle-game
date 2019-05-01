@@ -1,0 +1,19 @@
+{
+  "name": "sliding-puzzle-game",
+  "version": "1.0.0",
+  "description": "Sliding puzzle game with React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rotimi-babalola/sliding-puzzle-game.git"
+  },
+  "keywords": [
+    "puzzle",
+    "game"
+  ],
+  "author": "Rotimi Babalola",
+  "license": "ISC"
+}
