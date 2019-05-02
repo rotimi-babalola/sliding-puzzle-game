@@ -4,9 +4,13 @@ import { Provider } from 'react-redux';
 
 import store from './store';
 
+import Puzzle from './components/Puzzle';
+
+import './styles/scss/app.scss';
+
 const App = () => (
   <Provider store={store}>
-    <h1>Hello world</h1>
+    <Puzzle />
   </Provider>
 );
 
