@@ -9,35 +9,35 @@
   text-align: center;
   padding: 2em; }
   .cell.cell1 {
-    background: url(../../images/cropped/image_1_1.jpeg); }
+    background: url(../../images/cropped/image_1.jpeg); }
   .cell.cell2 {
-    background: url(../../images/cropped/image_1_2.jpeg); }
+    background: url(../../images/cropped/image_2.jpeg); }
   .cell.cell3 {
-    background: url(../../images/cropped/image_1_3.jpeg); }
+    background: url(../../images/cropped/image_3.jpeg); }
   .cell.cell4 {
-    background: url(../../images/cropped/image_1_4.jpeg); }
+    background: url(../../images/cropped/image_4.jpeg); }
   .cell.cell5 {
-    background: url(../../images/cropped/image_2_1.jpeg); }
+    background: url(../../images/cropped/image_5.jpeg); }
   .cell.cell6 {
-    background: url(../../images/cropped/image_2_2.jpeg); }
+    background: url(../../images/cropped/image_6.jpeg); }
   .cell.cell7 {
-    background: url(../../images/cropped/image_2_3.jpeg); }
+    background: url(../../images/cropped/image_7.jpeg); }
   .cell.cell8 {
-    background: url(../../images/cropped/image_2_4.jpeg); }
+    background: url(../../images/cropped/image_8.jpeg); }
   .cell.cell9 {
-    background: url(../../images/cropped/image_3_1.jpeg); }
+    background: url(../../images/cropped/image_9.jpeg); }
   .cell.cell10 {
-    background: url(../../images/cropped/image_3_2.jpeg); }
+    background: url(../../images/cropped/image_10.jpeg); }
   .cell.cell11 {
-    background: url(../../images/cropped/image_3_3.jpeg); }
+    background: url(../../images/cropped/image_11.jpeg); }
   .cell.cell12 {
-    background: url(../../images/cropped/image_3_4.jpeg); }
+    background: url(../../images/cropped/image_12.jpeg); }
   .cell.cell13 {
-    background: url(../../images/cropped/image_4_1.jpeg); }
+    background: url(../../images/cropped/image_13.jpeg); }
   .cell.cell14 {
-    background: url(../../images/cropped/image_4_2.jpeg); }
+    background: url(../../images/cropped/image_14.jpeg); }
   .cell.cell15 {
-    background: url(../../images/cropped/image_4_3.jpeg); }
+    background: url(../../images/cropped/image_15.jpeg); }
 
 .cell-empty {
   background: transparent; }
