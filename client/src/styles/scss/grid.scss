@@ -9,50 +9,13 @@
   color: #fff;
   text-align: center;
   padding: 2em;
-  &.cell1 {
-    background: url(../../images/cropped/image_1.jpeg);
+  @for $i from 1 through 15 {
+    &.cell#{$i} {
+      background: url(../../images/cropped/image_#{$i}.jpeg);
+    }
   }
-  &.cell2 {
-    background: url(../../images/cropped/image_2.jpeg);
-  }
-  &.cell3 {
-    background: url(../../images/cropped/image_3.jpeg);
-  }
-  &.cell4 {
-    background: url(../../images/cropped/image_4.jpeg);
-  }
-  &.cell5 {
-    background: url(../../images/cropped/image_5.jpeg);
-  }
-  &.cell6 {
-    background: url(../../images/cropped/image_6.jpeg);
-  }
-  &.cell7 {
-    background: url(../../images/cropped/image_7.jpeg);
-  }
-  &.cell8 {
-    background: url(../../images/cropped/image_8.jpeg);
-  }
-  &.cell9 {
-    background: url(../../images/cropped/image_9.jpeg);
-  }
-  &.cell10 {
-    background: url(../../images/cropped/image_10.jpeg); 
-  }
-  &.cell11 {
-    background: url(../../images/cropped/image_11.jpeg);
-  }
-  &.cell12 {
-    background: url(../../images/cropped/image_12.jpeg);
-  }
-  &.cell13 {
-    background: url(../../images/cropped/image_13.jpeg);
-  }
-  &.cell14 {
-    background: url(../../images/cropped/image_14.jpeg);
-  }
-  &.cell15 {
-    background: url(../../images/cropped/image_15.jpeg);
+  &.cell16 {
+    background: transparent;
   }
 }
 

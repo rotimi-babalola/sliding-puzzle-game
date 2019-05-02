@@ -38,6 +38,8 @@
     background: url(../../images/cropped/image_14.jpeg); }
   .cell.cell15 {
     background: url(../../images/cropped/image_15.jpeg); }
+  .cell.cell16 {
+    background: transparent; }
 
 .cell-empty {
   background: transparent; }

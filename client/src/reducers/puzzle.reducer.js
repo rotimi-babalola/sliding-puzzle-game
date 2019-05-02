@@ -1,6 +1,7 @@
 import { EXAMPLE } from '../constants';
+import initialState from './initialState';
 
-export default (state = {}, action) => {
+export default (state = initialState.puzzleState, action) => {
   switch (action.type) {
     case EXAMPLE:
       return {
