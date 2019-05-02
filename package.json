@@ -4,7 +4,13 @@
   "description": "Sliding puzzle game with React",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass-chokidar client/src/styles/scss -o client/src/styles/css",
+    "watch-css": "npm run build-css && node-sass-chokidar client/src/styles/scss -o client/src/styles/css --watch --recursive",
+    "client:dev": "rm -rf client/dist && webpack-dev-server --env.mode development --open --hot",
+    "build:client-dev": "rm -rf client/dist && webpack --env.mode development",
+    "build:client-prod": "rm -rf client/dist && webpack --env.mode production",
+    "start:dev": "npm-run-all -p watch-css client:dev"
   },
   "repository": {
     "type": "git",
