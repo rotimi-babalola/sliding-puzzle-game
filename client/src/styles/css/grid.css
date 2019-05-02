@@ -9,4 +9,25 @@
   font-size: 3em;
   text-align: center;
   padding: 2em;
-  background-color: #d3d3d3; }
+  background-color: #d3d3d3;
+  background: url(../../images/monks.jpg);
+  background-size: 300%; }
+  .cell.cell1 {
+    background-position: top left; }
+  .cell.cell2 {
+    background-position: top center; }
+  .cell.cell3 {
+    background-position: top right; }
+  .cell.cell4 {
+    background-position: center left; }
+  .cell.cell5 {
+    background-position: center; }
+  .cell.cell6 {
+    background-position: center right; }
+  .cell.cell7 {
+    background-position: bottom left; }
+  .cell.cell8 {
+    background-position: bottom center; }
+
+.cell-empty {
+  background: transparent; }
