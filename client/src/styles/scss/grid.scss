@@ -1,0 +1,24 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 125px);
+  grid-template-rows: repeat(4, 125px);
+  grid-gap: 5px;
+}
+
+.cell {
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+  @for $i from 1 through 15 {
+    &.cell#{$i} {
+      background: url(../../images/cropped/image_#{$i}.jpeg);
+    }
+  }
+  &.cell16 {
+    background: transparent;
+  }
+}
+
+.cell-empty {
+  background: transparent;
+}

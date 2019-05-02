@@ -12,6 +12,17 @@
     "build:client-prod": "rm -rf client/dist && webpack --env.mode production",
     "start:dev": "npm-run-all -p watch-css client:dev"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*{.js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rotimi-babalola/sliding-puzzle-game.git"
@@ -47,11 +58,13 @@
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
     "html-webpack-plugin": "^3.2.0",
+    "lodash": "^4.17.11",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
+    "react-spring": "^8.0.19",
     "redux": "^4.0.1",
     "redux-logger": "^3.0.6",
     "reselect": "^4.0.0",
