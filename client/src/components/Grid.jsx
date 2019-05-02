@@ -19,7 +19,7 @@ const Grid = () => (
     <div className="cell cell13">12</div>
     <div className="cell cell14">13</div>
     <div className="cell cell15">14</div>
-    <div className="cell cell16">15</div>
+    <div className="cell cell-empty">15</div>
   </div>
 );
 

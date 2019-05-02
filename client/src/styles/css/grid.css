@@ -1,48 +1,43 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 100px);
-  grid-template-rows: repeat(4, 100px);
-  grid-gap: 100px; }
+  grid-template-columns: repeat(4, 125px);
+  grid-template-rows: repeat(4, 125px);
+  grid-gap: 5px; }
 
 .cell {
   color: #fff;
-  font-size: 3em;
   text-align: center;
-  padding: 2em;
-  background: url(../../images/monks.jpg);
-  background-size: 300%; }
+  padding: 2em; }
   .cell.cell1 {
-    background-position: 0 0; }
+    background: url(../../images/cropped/image_1_1.jpeg); }
   .cell.cell2 {
-    background-position: 33% 0%; }
+    background: url(../../images/cropped/image_1_2.jpeg); }
   .cell.cell3 {
-    background-position: 66% 0%; }
+    background: url(../../images/cropped/image_1_3.jpeg); }
   .cell.cell4 {
-    background-position: 100% 0%; }
+    background: url(../../images/cropped/image_1_4.jpeg); }
   .cell.cell5 {
-    background-position: 0% 50%; }
+    background: url(../../images/cropped/image_2_1.jpeg); }
   .cell.cell6 {
-    background-position: 33% 33%; }
+    background: url(../../images/cropped/image_2_2.jpeg); }
   .cell.cell7 {
-    background-position: 66% 33%; }
+    background: url(../../images/cropped/image_2_3.jpeg); }
   .cell.cell8 {
-    background-position: 100% 33%; }
+    background: url(../../images/cropped/image_2_4.jpeg); }
   .cell.cell9 {
-    background-position: 0% 66%; }
+    background: url(../../images/cropped/image_3_1.jpeg); }
   .cell.cell10 {
-    background-position: 33% 66%; }
+    background: url(../../images/cropped/image_3_2.jpeg); }
   .cell.cell11 {
-    background-position: 66% 66%; }
+    background: url(../../images/cropped/image_3_3.jpeg); }
   .cell.cell12 {
-    background-position: 100% 66%; }
+    background: url(../../images/cropped/image_3_4.jpeg); }
   .cell.cell13 {
-    background-position: 0 100%; }
+    background: url(../../images/cropped/image_4_1.jpeg); }
   .cell.cell14 {
-    background-position: 33% 100%; }
+    background: url(../../images/cropped/image_4_2.jpeg); }
   .cell.cell15 {
-    background-position: 66% 100%; }
-  .cell.cell16 {
-    background-position: 100% 100%; }
+    background: url(../../images/cropped/image_4_3.jpeg); }
 
 .cell-empty {
   background: transparent; }
