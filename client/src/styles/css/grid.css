@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
   grid-gap: 100px; }
 
 .cell {
@@ -9,25 +9,40 @@
   font-size: 3em;
   text-align: center;
   padding: 2em;
-  background-color: #d3d3d3;
   background: url(../../images/monks.jpg);
   background-size: 300%; }
   .cell.cell1 {
-    background-position: top left; }
+    background-position: 0 0; }
   .cell.cell2 {
-    background-position: top center; }
+    background-position: 33% 0%; }
   .cell.cell3 {
-    background-position: top right; }
+    background-position: 66% 0%; }
   .cell.cell4 {
-    background-position: center left; }
+    background-position: 100% 0%; }
   .cell.cell5 {
-    background-position: center; }
+    background-position: 0% 50%; }
   .cell.cell6 {
-    background-position: center right; }
+    background-position: 33% 33%; }
   .cell.cell7 {
-    background-position: bottom left; }
+    background-position: 66% 33%; }
   .cell.cell8 {
-    background-position: bottom center; }
+    background-position: 100% 33%; }
+  .cell.cell9 {
+    background-position: 0% 66%; }
+  .cell.cell10 {
+    background-position: 33% 66%; }
+  .cell.cell11 {
+    background-position: 66% 66%; }
+  .cell.cell12 {
+    background-position: 100% 66%; }
+  .cell.cell13 {
+    background-position: 0 100%; }
+  .cell.cell14 {
+    background-position: 33% 100%; }
+  .cell.cell15 {
+    background-position: 66% 100%; }
+  .cell.cell16 {
+    background-position: 100% 100%; }
 
 .cell-empty {
   background: transparent; }
