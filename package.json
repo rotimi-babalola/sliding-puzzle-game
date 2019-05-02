@@ -12,6 +12,17 @@
     "build:client-prod": "rm -rf client/dist && webpack --env.mode production",
     "start:dev": "npm-run-all -p watch-css client:dev"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*{.js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/rotimi-babalola/sliding-puzzle-game.git"
