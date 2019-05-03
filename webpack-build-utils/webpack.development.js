@@ -3,4 +3,5 @@ module.exports = {
     historyApiFallback: true,
     port: 8000,
   },
+  devtool: 'source-map',
 };

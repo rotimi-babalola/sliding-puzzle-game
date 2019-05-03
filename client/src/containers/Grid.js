@@ -1,11 +1,16 @@
 import { connect } from 'react-redux';
 import Grid from '../components/Grid';
+import { shuffleNumbers } from '../actions/puzzle.actions';
 
 export const mapStateToProps = ({ puzzle }) => ({
-  sortedPositions: puzzle.sortedPositions,
+  puzzleNumbers: puzzle.puzzleNumbers,
 });
 
-export const mapDispatchToProps = () => ({});
+export const mapDispatchToProps = dispatch => ({
+  shuffleNumbers: () => {
+    dispatch(shuffleNumbers());
+  },
+});
 
 const GridContainer = connect(
   mapStateToProps,

@@ -43,3 +43,21 @@
 
 .cell-empty {
   background: transparent; }
+
+.button {
+  color: #0099CC;
+  background: transparent;
+  border: 2px solid #0099CC;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  margin: 25px 0px;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase; }
