@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { uniqueId } from 'lodash';
 
+import GridItem from './GridItem';
+
 import '../styles/scss/grid.scss';
 
 class Grid extends React.Component {
@@ -18,10 +20,15 @@ class Grid extends React.Component {
     return (
       <React.Fragment>
         <div className="container">
-          {this.props.puzzleNumbers.map(el => (
-            <div className={`cell cell${el + 1}`} key={uniqueId()}>
-              {el}
-            </div>
+          {this.props.puzzleNumbers.map((el, index) => (
+            <GridItem
+              number={el}
+              index={index}
+              className={`cell cell${el + 1}`}
+              numRows={4}
+              numColumns={4}
+              key={uniqueId()}
+            />
           ))}
         </div>
         <button

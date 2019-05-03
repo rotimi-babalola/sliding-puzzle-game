@@ -3,6 +3,7 @@
   grid-template-columns: repeat(4, 125px);
   grid-template-rows: repeat(4, 125px);
   grid-gap: 5px;
+  width: fit-content;
 }
 
 .cell {
