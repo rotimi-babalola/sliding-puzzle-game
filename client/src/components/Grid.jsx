@@ -17,9 +17,8 @@ class Grid extends React.Component {
     this.props.shuffleNumbers();
   }
 
-  // eslint-disable-next-line class-methods-use-this
-  handleGridItemClick(index) {
-    console.log(index, '>>>');
+  handleGridItemClick(gridIndex) {
+    this.props.swapNumbers(gridIndex);
   }
 
   render() {
@@ -56,6 +55,7 @@ class Grid extends React.Component {
 Grid.propTypes = {
   puzzleNumbers: PropTypes.arrayOf(PropTypes.number).isRequired,
   shuffleNumbers: PropTypes.func.isRequired,
+  swapNumbers: PropTypes.func.isRequired,
   emptyTileIndex: PropTypes.number.isRequired,
 };
 
