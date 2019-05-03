@@ -8,19 +8,34 @@ class GridItem extends React.Component {
   }
 
   getMatrixPosition() {
-    const { index, numRows, numColumns } = this.props;
+    const { index, numColumns } = this.props;
+    return {
+      row: Math.floor(index / numColumns),
+      col: index % numColumns,
+    };
+  }
+
+  getVisualPosition({ row, col }) {
+    const { width, height } = this.props;
+    // x = (col * width) + (5 * col) + 125
+    // y = (row * height) + (5 * row) + 125
+    return {
+      x: col * width + 5 * col,
+      y: row * height + 5 * row,
+    };
   }
 
   render() {
-    const { number, className } = this.props;
-    return <div className={className}>{number}</div>;
+    return <div className={this.props.className}>{this.props.number}</div>;
   }
 }
 
 GridItem.propTypes = {
   number: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
-  numRows: PropTypes.number.isRequired,
+  // numRows: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
   numColumns: PropTypes.number.isRequired,
   className: PropTypes.string.isRequired,
 };

@@ -28,6 +28,8 @@ class Grid extends React.Component {
               numRows={4}
               numColumns={4}
               key={uniqueId()}
+              height={125}
+              width={125}
             />
           ))}
         </div>
