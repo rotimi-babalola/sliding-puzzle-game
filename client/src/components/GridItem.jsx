@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -26,7 +28,14 @@ class GridItem extends React.Component {
   }
 
   render() {
-    return <div className={this.props.className}>{this.props.number}</div>;
+    return (
+      <div
+        className={this.props.className}
+        onClick={() => console.log('ksksk')}
+      >
+        {this.props.number}
+      </div>
+    );
   }
 }
 
