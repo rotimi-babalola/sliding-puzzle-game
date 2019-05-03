@@ -7,6 +7,7 @@ class GridItem extends React.Component {
   constructor(props) {
     super(props);
     this.getMatrixPosition = this.getMatrixPosition.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
   getMatrixPosition() {
@@ -27,12 +28,14 @@ class GridItem extends React.Component {
     };
   }
 
+  handleClick() {
+    const { index } = this.props;
+    this.props.onClick(index);
+  }
+
   render() {
     return (
-      <div
-        className={this.props.className}
-        onClick={() => console.log('ksksk')}
-      >
+      <div className={this.props.className} onClick={this.handleClick}>
         {this.props.number}
       </div>
     );
@@ -47,6 +50,7 @@ GridItem.propTypes = {
   height: PropTypes.number.isRequired,
   numColumns: PropTypes.number.isRequired,
   className: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
 };
 
 export default GridItem;
