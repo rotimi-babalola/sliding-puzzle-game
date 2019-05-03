@@ -1,7 +1,7 @@
-import { shuffle, without } from 'lodash';
+import { isEqual } from 'lodash';
 
-import { SHUFFLE, EMPTY_TILE, SWAP } from '../constants';
-import { swap } from '../utils';
+import { SHUFFLE, SWAP } from '../constants';
+import { swap, shuffleNumbers } from '../utils';
 import initialState from './initialState';
 
 export default (state = initialState.puzzleState, action) => {
@@ -9,14 +9,13 @@ export default (state = initialState.puzzleState, action) => {
     case SHUFFLE:
       return {
         ...state,
-        puzzleNumbers: shuffle(without(state.puzzleNumbers, EMPTY_TILE)).concat(
-          EMPTY_TILE,
-        ),
+        puzzleNumbers: shuffleNumbers(state.puzzleNumbers),
       };
     case SWAP:
       return {
         ...state,
         puzzleNumbers: swap(state.puzzleNumbers, action.payload),
+        isSolved: isEqual(state.puzzleNumbers, state.sortedNumbers),
       };
     default:
       return state;
