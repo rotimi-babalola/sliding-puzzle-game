@@ -1,14 +1,19 @@
 import { connect } from 'react-redux';
 import Grid from '../components/Grid';
-import { shuffleNumbers } from '../actions/puzzle.actions';
+import { shuffleNumbers, swapNumbers } from '../actions/puzzle.actions';
+import { emptyTileIndex } from '../selectors';
 
-export const mapStateToProps = ({ puzzle }) => ({
-  puzzleNumbers: puzzle.puzzleNumbers,
+export const mapStateToProps = state => ({
+  puzzleNumbers: state.puzzle.puzzleNumbers,
+  emptyTileIndex: emptyTileIndex(state),
 });
 
 export const mapDispatchToProps = dispatch => ({
   shuffleNumbers: () => {
     dispatch(shuffleNumbers());
+  },
+  swapNumbers: gridIndex => {
+    dispatch(swapNumbers(gridIndex));
   },
 });
 

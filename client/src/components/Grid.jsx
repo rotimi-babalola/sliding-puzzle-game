@@ -10,15 +10,21 @@ class Grid extends React.Component {
   constructor(props) {
     super(props);
     this.handleButttonClick = this.handleButttonClick.bind(this);
+    this.handleGridItemClick = this.handleGridItemClick.bind(this);
   }
 
   handleButttonClick() {
     this.props.shuffleNumbers();
   }
 
+  handleGridItemClick(gridIndex) {
+    this.props.swapNumbers(gridIndex);
+  }
+
   render() {
     return (
       <React.Fragment>
+        <p>{`Empty Tile Index ${this.props.emptyTileIndex}`}</p>
         <div className="container">
           {this.props.puzzleNumbers.map((el, index) => (
             <GridItem
@@ -30,6 +36,7 @@ class Grid extends React.Component {
               key={uniqueId()}
               height={125}
               width={125}
+              onClick={this.handleGridItemClick}
             />
           ))}
         </div>
@@ -48,6 +55,8 @@ class Grid extends React.Component {
 Grid.propTypes = {
   puzzleNumbers: PropTypes.arrayOf(PropTypes.number).isRequired,
   shuffleNumbers: PropTypes.func.isRequired,
+  swapNumbers: PropTypes.func.isRequired,
+  emptyTileIndex: PropTypes.number.isRequired,
 };
 
 export default Grid;

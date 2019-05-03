@@ -1,10 +1,8 @@
 import { shuffle, without } from 'lodash';
 
-import { SHUFFLE } from '../constants';
+import { SHUFFLE, EMPTY_TILE, SWAP } from '../constants';
+import { swap } from '../utils';
 import initialState from './initialState';
-
-// The empty is represented by the last number in the array
-const EMPTY_TILE = 15;
 
 export default (state = initialState.puzzleState, action) => {
   switch (action.type) {
@@ -14,6 +12,11 @@ export default (state = initialState.puzzleState, action) => {
         puzzleNumbers: shuffle(without(state.puzzleNumbers, EMPTY_TILE)).concat(
           EMPTY_TILE,
         ),
+      };
+    case SWAP:
+      return {
+        ...state,
+        puzzleNumbers: swap(state.puzzleNumbers, action.payload),
       };
     default:
       return state;
