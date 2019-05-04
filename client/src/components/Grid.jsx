@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { uniqueId } from 'lodash';
 
 import GridItem from './GridItem';
+import { isSolved } from '../utils';
 
 import '../styles/scss/grid.scss';
 
@@ -22,9 +23,11 @@ class Grid extends React.Component {
   }
 
   render() {
+    const solved = isSolved(this.props.puzzleNumbers);
     return (
       <React.Fragment>
         <p>{`Empty Tile Index ${this.props.emptyTileIndex}`}</p>
+        <p>{solved ? 'Solved!' : 'Not solved'}</p>
         <div className="container">
           {this.props.puzzleNumbers.map((el, index) => (
             <GridItem
