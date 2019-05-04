@@ -30,6 +30,10 @@ class Grid extends React.Component {
 
   handleButtonClick() {
     this.props.shuffleNumbers();
+    // reset number of moves
+    this.setState({
+      numberOfMoves: 0,
+    });
   }
 
   handleGridItemClick(gridIndex) {
