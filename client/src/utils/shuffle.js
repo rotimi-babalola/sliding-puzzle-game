@@ -1,10 +1,6 @@
-import { shuffle, without, isEqual } from 'lodash';
+import { shuffle, without } from 'lodash';
 import { EMPTY_TILE, NUM_OF_COLS, NUM_OF_ROWS } from '../constants';
-
-export const isSolved = numbers => {
-  const sortedNumbers = [...numbers].sort();
-  return isEqual(numbers, sortedNumbers);
-};
+import { isSolved } from './isSolved';
 
 const isSolvable = (numbers, rows = NUM_OF_ROWS, cols = NUM_OF_COLS) => {
   let product = 1;
@@ -17,7 +13,6 @@ const isSolvable = (numbers, rows = NUM_OF_ROWS, cols = NUM_OF_COLS) => {
 };
 
 export const shuffleNumbers = numbers => {
-  console.log(isSolvable(numbers), '>>>');
   do {
     const shuffledNumbers = shuffle(without(numbers, EMPTY_TILE)).concat(
       EMPTY_TILE,

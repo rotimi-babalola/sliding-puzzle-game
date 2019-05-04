@@ -1,10 +1,16 @@
+.container-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 30px;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(4, 125px);
   grid-template-rows: repeat(4, 125px);
   grid-gap: 5px;
   width: fit-content;
-  // margin: 0 auto;
+  margin: 0 200px;
 }
 
 .cell {
@@ -36,10 +42,15 @@
   display: inline-block;
   font-size: 16px;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  margin: 25px 0px;
+  margin: 30px 0px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
   text-decoration: none;
   text-transform: uppercase;
+  grid-column: 2;
+}
+
+.empty-tile, .solved, .moves {
+  font-size: 20px;
 }

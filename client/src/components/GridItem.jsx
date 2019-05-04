@@ -26,10 +26,6 @@ class GridItem extends React.Component {
 GridItem.propTypes = {
   number: PropTypes.number.isRequired,
   index: PropTypes.number.isRequired,
-  // numRows: PropTypes.number.isRequired,
-  // width: PropTypes.number.isRequired,
-  // height: PropTypes.number.isRequired,
-  // numColumns: PropTypes.number.isRequired,
   className: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
 };
