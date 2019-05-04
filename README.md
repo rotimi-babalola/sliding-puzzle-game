@@ -14,9 +14,9 @@ This is a React Application that allows users to play the popular sliding puzzle
 # Steps to install
 
 - Clone this repository
-  ```
-  git clone https://github.com/rotimi-babalola/sliding-puzzle-game.git
-  ```
+```
+git clone https://github.com/rotimi-babalola/sliding-puzzle-game.git
+```
 - Install dependencies
 ```
 npm install
