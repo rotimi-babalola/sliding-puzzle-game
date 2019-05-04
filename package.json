@@ -10,7 +10,8 @@
     "client:dev": "rm -rf client/dist && webpack-dev-server --env.mode development --open --hot",
     "build:client-dev": "rm -rf client/dist && webpack --env.mode development",
     "build:client-prod": "rm -rf client/dist && webpack --env.mode production",
-    "start:dev": "npm-run-all -p watch-css client:dev"
+    "start:dev": "npm-run-all -p watch-css client:dev",
+    "prod": "npm-run-all -p build-css build:client-prod"
   },
   "husky": {
     "hooks": {
