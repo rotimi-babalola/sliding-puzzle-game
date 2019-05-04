@@ -1,5 +1,3 @@
-import { isEqual } from 'lodash';
-
 import { SHUFFLE, SWAP } from '../constants';
 import { swap, shuffleNumbers } from '../utils';
 import initialState from './initialState';
@@ -15,7 +13,6 @@ export default (state = initialState.puzzleState, action) => {
       return {
         ...state,
         puzzleNumbers: swap(state.puzzleNumbers, action.payload),
-        isSolved: isEqual(state.puzzleNumbers, state.sortedNumbers),
       };
     default:
       return state;
