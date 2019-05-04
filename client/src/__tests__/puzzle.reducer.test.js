@@ -13,7 +13,7 @@ const initialState = {
 
 const action = {};
 
-describe('Puzzle reducer', () => {
+describe('Puzzle Reducer Tests', () => {
   it('should return initial state when there is no action', () => {
     expect(puzzleReducer(initialState, action)).toEqual(initialState);
   });
