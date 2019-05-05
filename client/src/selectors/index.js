@@ -1,9 +1,11 @@
 import { createSelector } from 'reselect';
-import { EMPTY_TILE } from '../constants';
+import { EMPTY_TILE, NUM_OF_COLS } from '../constants';
+import { getMatrixPosition } from '../utils';
 
 const puzzleSelector = state => state.puzzle.puzzleNumbers;
 
 export const emptyTileIndex = createSelector(
   [puzzleSelector],
-  puzzleNumbers => puzzleNumbers.indexOf(EMPTY_TILE),
+  puzzleNumbers =>
+    getMatrixPosition(puzzleNumbers.indexOf(EMPTY_TILE), NUM_OF_COLS),
 );

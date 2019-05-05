@@ -45,6 +45,7 @@ class Grid extends React.Component {
 
   render() {
     const solved = isSolved(this.props.puzzleNumbers);
+    const { row, col } = this.props.emptyTileIndex;
     return (
       <div className="container-wrapper">
         <div className="container">
@@ -67,9 +68,7 @@ class Grid extends React.Component {
         </div>
         <div className="game-info">
           <p className="moves">{`Moves made: ${this.state.numberOfMoves}`}</p>
-          <p className="empty-tile">
-            {`Empty Tile Index: ${this.props.emptyTileIndex}`}
-          </p>
+          <p className="empty-tile">{`Empty Tile Grid Index - Row: ${row}, Column: ${col}`}</p>
           <p className="solved">{this.getSolvedText(solved)}</p>
         </div>
       </div>
@@ -81,7 +80,10 @@ Grid.propTypes = {
   puzzleNumbers: PropTypes.arrayOf(PropTypes.number).isRequired,
   shuffleNumbers: PropTypes.func.isRequired,
   swapNumbers: PropTypes.func.isRequired,
-  emptyTileIndex: PropTypes.number.isRequired,
+  emptyTileIndex: PropTypes.shape({
+    row: PropTypes.number.isRequired,
+    col: PropTypes.number.isRequired,
+  }).isRequired,
 };
 
 export default Grid;
