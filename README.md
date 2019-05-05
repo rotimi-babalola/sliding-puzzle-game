@@ -1,7 +1,7 @@
 # Sliding puzzle game
 This is a React Application that allows users to play the popular sliding puzzle game. A picture is given to the user and he/she has to rearrange the pieces to form the original picture
 
-<img width="1440" alt="Sliding Puzzle Game" src="./client/src/images/screenshot.png">
+<img width="1440" alt="Sliding Puzzle Game" src="./client/src/images/screenshot-new.png">
 
 
 # Technology stack
@@ -14,9 +14,9 @@ This is a React Application that allows users to play the popular sliding puzzle
 # Steps to install
 
 - Clone this repository
-  ```
-  git clone https://github.com/rotimi-babalola/sliding-puzzle-game.git
-  ```
+```
+git clone https://github.com/rotimi-babalola/sliding-puzzle-game.git
+```
 - Install dependencies
 ```
 npm install

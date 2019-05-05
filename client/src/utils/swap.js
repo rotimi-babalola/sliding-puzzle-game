@@ -1,8 +1,8 @@
 import { EMPTY_TILE, NUM_OF_COLS } from '../constants';
 
 export const getMatrixPosition = (index, cols) => ({
-  row: Math.floor(index / cols),
-  col: index % cols,
+  row: Math.floor(index / cols) + 1,
+  col: (index % cols) + 1,
 });
 
 const canSwap = (gridIndex, emptyTileIndex) => {

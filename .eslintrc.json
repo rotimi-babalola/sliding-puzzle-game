@@ -12,6 +12,7 @@
         "import/prefer-default-export": "off",
         "react/destructuring-assignment": "off",
         "no-plusplus": "off",
-        "react/jsx-filename-extension": "off"
+        "react/jsx-filename-extension": "off",
+        "implicit-arrow-linebreak": "off"
     }
 }
