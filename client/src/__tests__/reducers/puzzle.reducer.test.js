@@ -1,9 +1,9 @@
 import expect from 'expect';
 import { range } from 'lodash';
 
-import puzzleReducer from '../reducers/puzzle.reducer';
-import { shuffleNumbers, isSolved } from '../utils';
-import { SHUFFLE, SWAP, EMPTY_TILE } from '../constants';
+import puzzleReducer from '../../reducers/puzzle.reducer';
+import { shuffleNumbers, isSolved } from '../../utils';
+import { SHUFFLE, SWAP, EMPTY_TILE } from '../../constants';
 
 const initialState = {
   puzzleNumbers: shuffleNumbers(range(0, 16)),
