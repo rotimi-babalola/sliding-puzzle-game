@@ -2,7 +2,7 @@ import React from 'react';
 import expect from 'expect';
 import { shallow } from 'enzyme';
 
-import GridItem from '../components/GridItem';
+import GridItem from '../../components/GridItem';
 
 describe('Renders <GridItem /> component', () => {
   const props = {

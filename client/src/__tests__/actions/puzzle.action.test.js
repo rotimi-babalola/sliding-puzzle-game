@@ -1,7 +1,7 @@
 import expect from 'expect';
 import configureMockStore from 'redux-mock-store';
-import { SWAP, SHUFFLE } from '../constants';
-import { shuffleNumbers, swapNumbers } from '../actions/puzzle.actions';
+import { SWAP, SHUFFLE } from '../../constants';
+import { shuffleNumbers, swapNumbers } from '../../actions/puzzle.actions';
 
 const middleWare = [];
 

@@ -2,7 +2,7 @@ import React from 'react';
 import expect from 'expect';
 import { shallow } from 'enzyme';
 
-import Puzzle from '../components/Puzzle';
+import Puzzle from '../../components/Puzzle';
 
 describe('Renders <Puzzle /> component correctly', () => {
   const wrapper = shallow(<Puzzle />);
